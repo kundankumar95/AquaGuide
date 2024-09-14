@@ -1,0 +1,50 @@
+from flask import Flask, request, jsonify
+from flask_cors import CORS
+from backend.chat.chat import Chat
+from backend.disaster_pred.fetch_current_weather import fetch_weather
+
+app = Flask(__name__)
+CORS(app)  # Enable CORS for all routes
+
+@app.route('/classify', methods=['GET'])
+def classify():
+    # Extract query parameter
+    query = request.args.get('query')
+    
+    if not query:
+        return jsonify({'error': 'No query parameter provided'}), 400
+    
+    try:
+        # Call your Chat function
+        response, prob = Chat(query)
+        
+        # Return JSON response with probability
+        return jsonify({
+            'response': response,
+            'probability': prob
+        })
+    except Exception as e:
+        app.logger.error(f'Error in Chat function: {e}')
+        return jsonify({'error': 'Internal server error'}), 500
+
+
+
+@app.route('/fetchData',methods=['GET'])
+
+def fetchData():
+    query = request.args.get('query')
+    
+    if not query:
+        return jsonify({'error': 'No query parameter provided'}), 400
+
+    # Assuming fetch_weather is defined correctly
+    try:
+        # Call your fetch_weather function
+        response = fetch_weather(query)
+        return response  # Ensure this returns a valid Flask response
+    except Exception as e:
+        app.logger.error(f"Error fetching weather data: {e}")
+        return jsonify({'error': 'Failed to fetch weather data'}), 500
+
+if __name__ == '__main__':
+    app.run(port=5000, debug=True)

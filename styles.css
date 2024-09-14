@@ -1,0 +1,515 @@
+/* Reset some default styling */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Overall body styling */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar styling */
+header {
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li {
+    margin-left: 20px;
+}
+
+.nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-menu a:hover {
+    text-decoration: underline;
+}
+
+/* Hero section styling */
+.hero {
+    background-image: url('https://img.freepik.com/premium-photo/satellite-view-texture_1562-234.jpg?w=1060'); 
+    background-size: cover;
+    background-position: center;
+    height: 650px;
+    width: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #0066cc;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #005bb5;
+}
+/* General body and container styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1200px;
+}
+/* Get Started Section Styling */
+.get-started {
+    background: linear-gradient(to right, #f5f7fa, #c3cfe2); /* Gradient background for a modern look */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.get-started-header h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.get-started-header p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.get-started-steps {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Space between steps */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    margin-bottom: 30px;
+}
+
+.step {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    max-width: 300px; /* Maximum width for each step */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.step:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+
+.step-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+}
+
+.step h3 {
+    font-size: 24px;
+    color: #0056b3;
+    margin-bottom: 10px;
+}
+
+.step p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* CTA Button Styling */
+.cta-button {
+    background-color: #0066cc;
+    color: #fff;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 8px;
+    display: inline-block;
+    margin-top: 30px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #005bb5;
+    transform: scale(1.05);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .get-started-steps {
+        flex-direction: column; /* Stack steps vertically on smaller screens */
+        align-items: center; /* Center-align items */
+    }
+    
+    .step {
+        max-width: 90%; /* Increase max-width on smaller screens */
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .get-started-steps {
+        flex-direction: column;
+    }
+    
+    .step {
+        max-width: 90%;
+    }
+}
+
+/* How It Works Section Styling */
+.how-it-works {
+    padding: 80px 20px;
+    text-align: center;
+    background: #f5f7f9;
+    border-top: 5px solid #0066cc;
+}
+
+.how-it-works h2 {
+    font-size: 36px;
+    color: #222;
+    margin-bottom: 40px;
+    font-weight: 800;
+    font-family: 'Roboto', sans-serif;
+}
+
+.how-it-works .steps {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 700px;
+    text-align: left;
+}
+
+.how-it-works .steps li {
+    font-size: 18px;
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 40px;
+    line-height: 1.6;
+    color: #555;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.how-it-works .steps li::before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-image: url('https://img.freepik.com/premium-vector/green-checkmark-symbolizing-approval-completionit-is-prominently-positioned_1134661-51022.jpg?uid=R134696271&ga=GA1.1.1365272061.1724055740&semt=ais_hybrid'); /* Ensure you have an appropriate checkmark icon */
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.how-it-works .infographic {
+    max-width: 600px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin: 40px auto;
+}
+
+.how-it-works .info-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.how-it-works .info-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.how-it-works .info-container p {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #666;
+    max-width: 800px;
+    line-height: 1.8;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*virtual assistant*/
+
+.virtual-assistant {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.chat-container {
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.chat-header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+}
+
+.chatbot-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.chat-header h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.chat-body {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+}
+
+.message {
+    max-width: 80%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.bot-message {
+    background-color: #007bff;
+    color: #fff;
+    align-self: flex-start;
+}
+
+.user-message {
+    background-color: #e0e0e0;
+    align-self: flex-end;
+}
+
+.chat-footer {
+    display: flex;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-top: 1px solid #ddd;
+}
+
+#user-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#send-btn {
+    margin-left: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#send-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Information Cards Section Styling */
+.info-cards {
+    padding: 60px 20px;
+    background: #f9fcff; /* Light blue background for a fresh look */
+    text-align: center;
+}
+
+.info-cards h2 {
+    font-size: 36px; /* Increased font size for better visibility */
+    color: #020a11; /* Dark blue color for a professional appearance */
+    margin-bottom: 30px;
+    font-weight: 700;
+    text-transform: uppercase; /* Uppercase for a stronger header */
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.info-card {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 12px; /* Rounded corners for a modern look */
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    max-width: 320px; /* Slightly larger card width */
+    text-align: center; /* Center-align text within the card */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition effects */
+}
+
+.info-card:hover {
+    transform: translateY(-5px); /* Subtle lift effect on hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+.card-icon {
+    margin-bottom: 15px;
+}
+
+.card-icon img {
+    width: 60px; /* Consistent icon size */
+    height: 60px;
+}
+
+.info-card h3 {
+    font-size: 20px; /* Adjusted font size for a balanced look */
+    color: #0056b3; /* Blue color for headings */
+    margin-bottom: 10px;
+}
+
+.info-card p {
+    font-size: 16px;
+    color: #666; /* Slightly lighter color for text */
+}
+
+
+/* Resources Section Styling */
+.resources {
+    padding: 60px 20px;
+    background: #f4f8fc; /* Light, soft background color */
+    text-align: center;
+}
+
+.resources h2 {
+    font-size: 36px; /* Slightly larger font size for emphasis */
+    color: #000306; /* Dark blue for a professional appearance */
+    margin-bottom: 20px; /* Reduced margin for better spacing */
+    font-weight: 700;
+    text-transform: uppercase; /* Uppercase for a stronger header */
+}
+
+.resource-content {
+    max-width: 800px; /* Limiting the width for better readability */
+    margin: 0 auto; /* Centering the content */
+    padding: 20px;
+    background: #fff; /* White background for the content area */
+    border-radius: 10px; /* Rounded corners for the content area */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for a lifted effect */
+}
+
+.resource-content p {
+    font-size: 18px;
+    color: #555; /* Slightly darker color for text */
+    margin-bottom: 30px; /* Space between paragraph and list */
+}
+
+.resource-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.resource-links li {
+    margin-bottom: 15px; /* Increased spacing between list items */
+}
+
+.resource-links a {
+    color: #0066cc; /* Consistent color for links */
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500; /* Slightly heavier font weight for readability */
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transition effects */
+}
+
+.resource-links a:hover {
+    color: #004b8d; /* Darker shade on hover for better interaction */
+    text-decoration: underline;
+}
+
+
+/* Footer Section Styling */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+footer a {
+    color:  #0066cc;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

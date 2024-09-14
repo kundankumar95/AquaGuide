@@ -1,0 +1,121 @@
+{
+    "intents": [
+        {
+            "tag": "A0",
+            "patterns": [
+                "Hi",
+                "Hello",
+                "Hii",
+                "Hey",
+                "Greetings"
+            ],
+            "responses": [
+                "Hello! I’m FieldFriend, developed by Kundan Kumar. I use NLP to provide farmers with real-time, region-specific information on weather, soil, and water, using NASA data and expert advice. How can I assist you today?"
+            ]
+        },
+        {
+            "tag": "weather",
+            "patterns": [
+                "What's the weather like today?",
+                "Tell me the weather forecast",
+                "How is the weather in my area?",
+                "What's the temperature today?"
+            ],
+            "responses": [
+                "I can help with that! Please provide me with your location or region to get the latest weather update.",
+                "For the current weather forecast, let me know your location so I can fetch the most accurate information."
+            ]
+        },
+        {
+            "tag": "soil",
+            "patterns": [
+                "How is the soil condition?",
+                "Tell me about the soil quality",
+                "Is my soil good for planting?",
+                "What type of soil is best for crops?"
+            ],
+            "responses": [
+                "To assess soil condition, please provide details about your soil type or location. I can offer recommendations based on the data available.",
+                "For detailed soil quality information, I need to know the specific region or type of soil you are referring to."
+            ]
+        },
+        {
+            "tag": "crops",
+            "patterns": [
+                "Which crops are best for this season?",
+                "Tell me about crop recommendations",
+                "What crops should I plant now?",
+                "Advice on crop selection for my region"
+            ],
+            "responses": [
+                "I can suggest crops based on the current season and your region. Could you please share your location or the type of soil you have?",
+                "For crop recommendations, let me know the season and soil conditions in your area."
+            ]
+        },
+        {
+            "tag": "irrigation",
+            "patterns": [
+                "How often should I water my crops?",
+                "Tell me about irrigation practices",
+                "What is the best way to irrigate my field?",
+                "Advice on watering crops"
+            ],
+            "responses": [
+                "Irrigation needs vary depending on your crop type and local conditions. Please provide details about your crops and location for tailored advice.",
+                "For specific irrigation practices, I need to know the type of crops you are growing and the local weather conditions."
+            ]
+        },
+        {
+            "tag": "pests",
+            "patterns": [
+                "How can I manage pests in my field?",
+                "Tell me about pest control",
+                "What should I do about pests on my crops?",
+                "Advice on dealing with pests"
+            ],
+            "responses": [
+                "Pest management depends on the type of pests and your crops. Could you provide more details about the pests or crops you're concerned about?",
+                "For effective pest control, I need information on the specific pests and the crops they are affecting."
+            ]
+        },
+        {
+            "tag": "fertilizers",
+            "patterns": [
+                "What type of fertilizer should I use?",
+                "Tell me about fertilizer application",
+                "How often should I apply fertilizer?",
+                "Best practices for fertilizing crops"
+            ],
+            "responses": [
+                "Fertilizer needs vary based on the type of crops and soil. Please share details about your crops and soil for specific recommendations.",
+                "For optimal fertilizer application advice, I need to know your crop type and soil conditions."
+            ]
+        },
+        {
+            "tag": "seasonal_advice",
+            "patterns": [
+                "What should I do this season?",
+                "Advice for the current agricultural season",
+                "What are the best practices for this time of year?",
+                "Seasonal farming tips"
+            ],
+            "responses": [
+                "Seasonal advice can vary based on your location and the current weather. Let me know your region for specific tips and best practices.",
+                "For tailored seasonal advice, please provide your location and any specific challenges you're facing."
+            ]
+        },
+        {
+            "tag": "disease_control",
+            "patterns": [
+                "How can I prevent plant diseases?",
+                "Tell me about disease management for crops",
+                "What should I do if my plants are diseased?",
+                "Advice on plant disease control"
+            ],
+            "responses": [
+                "Disease control depends on the type of plants and diseases. Provide more details about your plants and symptoms for specific advice.",
+                "To help with disease management, I need to know about the specific plants and any symptoms you're observing."
+            ]
+        }
+    ]
+}

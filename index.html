@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AquaGuide</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.css" />
+</head>
+<body>
+    <!-- Navbar -->
+     <!--fgjhi-->
+    <header>
+        <nav>
+            <div class="logo">AquaGuide</div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#web-platform">Web Platform</a></li>
+                <li><a href="#virtual-assistant">Virtual Assistant</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Empowering Farmers with Data-Driven Insights</h1>
+            <p>AquaGuide predicts and mitigates water-related risks, empowering confident decision-making. It helps protect assets, ensure business continuity, and safeguard communities from water-related threats.</p>
+            <a href="#explore" class="cta-button">Explore AquaGuide</a>
+        </div>
+    </section>
+
+    <!-- Get Started Section -->
+    <section class="get-started">
+        <div class="container">
+            <div class="get-started-header">
+                <h2>Start Your Journey to Sustainable Agriculture</h2>
+                <p>Transform your farm with our easy-to-follow steps and expert guidance.</p>
+            </div>
+            <div class="get-started-steps">
+                <div class="step">
+                    <img src="https://img.freepik.com/free-psd/free-label-isolated_23-2150494085.jpg?uid=R134696271&ga=GA1.1.1365272061.1724055740&semt=ais_hybrid" alt="Sign up" class="step-icon">
+                    <h3>Sign up for a free trial</h3>
+                    <p>Experience our service with no commitment required.</p>
+                </div>
+                <div class="step">
+                    <img src="https://img.freepik.com/premium-photo/closeup-farmers-hands-holding-tablet-corn-field-light-setting-sun-farmer-uses_124865-44659.jpg?uid=R134696271&ga=GA1.1.1365272061.1724055740&semt=ais_hybrid" alt="Connect data" class="step-icon">
+                    <h3>Connect your farm data</h3>
+                    <p>Seamlessly integrate your existing farm data into our platform.</p>
+                </div>
+                <div class="step">
+                    <img src="https://img.freepik.com/free-vector/verified-concept-illustration_114360-5138.jpg?uid=R134696271&ga=GA1.1.1365272061.1724055740&semt=ais_hybrid" alt="Recommendations" class="step-icon">
+                    <h3>Get personalized recommendations</h3>
+                    <p>Receive tailored advice to enhance your farm's productivity and sustainability.</p>
+                </div>
+            </div>
+            <a href="#signup" class="cta-button">Sign up now</a>
+        </div>
+    </section>
+
+    <section class="how-it-works">
+        <h2>How It Works</h2>
+        <ul class="steps">
+            <li>Step 1: Explain what the first step involves.</li>
+            <li>Step 2: Describe the second step and its significance.</li>
+            <li>Step 3: Outline the third step and how it contributes to the process.</li>
+            <li>Step 4: Summarize the final step and its impact.</li>
+        </ul>
+        <div class="info-container">
+            <img src="https://img.freepik.com/premium-photo/peaceful-rural-landscape-with-cows-grazing-field-near-red-barn_14117-958975.jpg?uid=R134696271&ga=GA1.1.1365272061.1724055740&semt=ais_hybrid" alt="Infographic explaining the process" class="infographic">
+            <p>Our infographic provides a visual representation of the process, making it easier to understand each step in detail.</p>
+        </div>
+    </section>
+
+    <!-- Virtual Assistant Interface -->
+    <section class="virtual-assistant">
+        <div class="chat-container">
+            <div class="chat-header">
+                <img src="data.png" alt="Chatbot" class="chatbot-img">
+                <h2>Virtual Assistant</h2>
+            </div>
+            <div class="chat-body" id="chat-body">
+                <div class="message bot-message">
+                </div>
+            </div>
+            <div class="chat-footer">
+                <input type="text" id="user-input" placeholder="Type your message here...">
+                <button id="send-btn">Send</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Information Cards Section -->
+    <section class="info-cards">
+        <div class="container">
+            <h2>Key Information at a Glance</h2>
+            <div class="card-container">
+                <div class="info-card">
+                    <div class="card-icon">
+                        <img src="https://img.freepik.com/premium-photo/weather-symbol_869423-1565.jpg?uid=R134696271&ga=GA1.1.1365272061.1724055740&semt=ais_hybrid" alt="Weather Icon">
+                    </div>
+                    <h3>Weather Forecasts</h3>
+                    <p>Stay updated with the latest weather forecasts relevant to your region.</p>
+                </div>
+                <div class="info-card">
+                    <div class="card-icon">
+                        <img src="https://img.freepik.com/premium-vector/water-drop-icon-with-checkmark-clean-water-concept-drinkable-water-icon-isolated-white_118339-7116.jpg?uid=R134696271&ga=GA1.1.1365272061.1724055740&semt=ais_hybrid" alt="Water Quality Icon">
+                    </div>
+                    <h3>Water Quality Data</h3>
+                    <p>Access real-time data on water quality metrics and trends.</p>
+                </div>
+                <div class="info-card">
+                    <div class="card-icon">
+                        <img src="https://img.freepik.com/premium-vector/hand-drawn-wheat-grains_135595-67631.jpg?uid=R134696271&ga=GA1.1.1365272061.1724055740&semt=ais_hybrid" alt="Crop Yield Icon">
+                    </div>
+                    <h3>Crop Yield Statistics</h3>
+                    <p>Analyze crop yield statistics to optimize your farming practices.</p>
+                </div>
+                <div class="info-card">
+                    <div class="card-icon">
+                        <img src="https://img.freepik.com/free-photo/plants-being-planted-greenhouse_273609-14257.jpg?uid=R134696271&ga=GA1.1.1365272061.1724055740&semt=ais_hybrid" alt="Farming Tips Icon">
+                    </div>
+                    <h3>Sustainable Farming Tips</h3>
+                    <p>Get practical tips and best practices for sustainable agriculture.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section class="resources">
+        <div class="container">
+            <h2>Resources</h2>
+            <div class="resource-content">
+                <p>Explore valuable resources and information related to water management and sustainable agriculture. Click on the links below to access various NASA resources and external sites:</p>
+                <ul class="resource-links">
+                    <li><a href="https://www.nasa.gov/earth" target="_blank">NASA Earth Science</a></li>
+                    <li><a href="https://www.nasa.gov/earth/earth-science-ocean" target="_blank">NASA Ocean Science</a></li>
+                    <li><a href="https://www.nasa.gov/feature/earth-observing-satellites" target="_blank">NASA Earth Observing Satellites</a></li>
+                    <li><a href="https://www.agriculture.com/" target="_blank">Agriculture.com</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 AquaGuide. All rights reserved. | NASA Disclaimer: This website is not affiliated with NASA but uses NASA data.</p>
+            <p>Project credits: Developed by XXXXX. Special thanks to contributors and partners.</p>
+        </div>
+    </footer>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('send-btn').addEventListener('click', async () => {
+                const userInput = document.getElementById('user-input').value;
+
+                // Display user's message
+                displayMessage(userInput, 'user-message');
+
+                // Send request to backend
+                try {
+                    const response = await fetch(`http://localhost:5000/classify?query=${encodeURIComponent(userInput)}`);
+                    const data = await response.json();
+
+                    // Display backend's response
+                    displayMessage(data.response, 'bot-message');
+                } catch (error) {
+                    console.error('Failed to fetch:', error);
+                    displayMessage('Sorry, there was an error. Please try again later.', 'bot-message');
+                }
+
+                // Clear input field
+                document.getElementById('user-input').value = '';
+            });
+
+            function displayMessage(message, messageType) {
+                const chatBody = document.getElementById('chat-body');
+                const messageDiv = document.createElement('div');
+                messageDiv.className = `message ${messageType}`;
+                messageDiv.innerHTML = `<p>${message}</p>`;
+                chatBody.appendChild(messageDiv);
+
+                // Scroll to the bottom of the chat
+                chatBody.scrollTop = chatBody.scrollHeight;
+            }
+        });
+    </script>
+</body>
+</html>
